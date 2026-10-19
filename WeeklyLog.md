@@ -9,5 +9,3 @@
 - **October 17 — Faiyaz and Ilya:** Reviewed component tests, testing methods, and observed results.
 - **October 18 — Faiyaz and Ilya:** Prepared the Checkpoint 2 submission and assigned the remaining implementation work.
 
-
-10:31 PM
