@@ -1,0 +1,17 @@
+//2 bytes per instruction -- test
+
+31 07 // ADDI: s1 = 7
+32 03 // ADDI: s2 = 3
+01 20 // ADD: s1 = s2 + s1 = 10
+02 11 // SUB: s2 = s1 - s2 = 7
+33 01 // ADDI: s3 = 1
+03 22 // SLL: s3 = s3 << s2 = 128
+01 23 // AND: s1 = s2 & s1 = 2
+21 02 // SW: store s1 at byte address 2
+14 02 // LW: load byte address 2 into s4
+44 11 // BEQ: s4 equals s1, so skip the next instruction
+35 07 // Skipped: s5 should stay 0
+51 21 // BNE: s1 differs from s2, so skip the next instruction
+36 07 // Skipped: s6 should stay 0
+37 0F // ADDI: s7 = -1
+6F FF // JMP: stay here at PC = 001C
